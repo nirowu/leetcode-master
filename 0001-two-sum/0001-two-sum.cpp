@@ -7,6 +7,7 @@ public:
             if (mp.find(nums[i]) != mp.end()) {
                 ans[0] = i;
                 ans[1] = mp[nums[i]];
+                break;
             }
             mp[target - nums[i]] = i;
 
