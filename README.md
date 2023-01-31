@@ -1,2 +1,2 @@
 # leetcode-master
-AC code on leetcode
+AC code on leetcode update with leethub extension
