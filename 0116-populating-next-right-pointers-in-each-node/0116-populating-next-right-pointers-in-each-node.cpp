@@ -25,11 +25,11 @@ public:
         que.push(root);
         while (!que.empty()) {
             int size = que.size();
-            vector<Node*> link(size);
+            vector<Node*> link;
             for (int i = 0; i < size; i++) {
                 cur = que.front();
                 que.pop();
-                link[i] = cur;
+                link.push_back(cur);
                 if (cur->left) que.push(cur->left);
                 if (cur->right) que.push(cur->right);
             }
