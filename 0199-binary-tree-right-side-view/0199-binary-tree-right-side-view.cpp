@@ -17,14 +17,16 @@ public:
         que.push(root);
         if(root == NULL) return ans;
         while (!que.empty()) {
-            int size = que.size();
+            int size = que.size(), data = 0;
             for (int i = 0; i < size; i++) {
                 TreeNode* cur = que.front();
                 que.pop();
-                if (i == size - 1) ans.push_back(cur->val);
+                data = cur->val;
+                // if (i == size - 1) ans.push_back(cur->val);
                 if (cur->left) que.push(cur->left);
                 if (cur->right) que.push(cur->right);
             }
+            ans.push_back(data);
         }
         return ans;
     }
