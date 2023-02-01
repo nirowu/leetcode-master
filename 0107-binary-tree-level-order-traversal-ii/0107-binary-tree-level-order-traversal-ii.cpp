@@ -28,10 +28,7 @@ public:
             }
             ans.push_back(temp);
         }
-        vector<vector<int>> rev(ans.size());
-        for(int i = 0; i < ans.size(); i++) {
-            rev[ans.size() - i - 1] = ans[i];
-        }
-        return rev;
+        reverse(ans.begin(), ans.end());
+        return ans;
     }
 };
