@@ -25,14 +25,16 @@ public:
         que.push(root);
         while (!que.empty()) {
             int size = que.size();
-            head = que.front();
+            vector<Node*> link(size);
             for (int i = 0; i < size; i++) {
                 cur = que.front();
                 que.pop();
-                if(i != 0) head -> next = cur;
-                head = cur;
+                link[i] = cur;
                 if (cur->left) que.push(cur->left);
                 if (cur->right) que.push(cur->right);
+            }
+            for (int i = 1; i < size; i++) {
+                link[i - 1]->next = link[i];
             }
         }
         return root;
