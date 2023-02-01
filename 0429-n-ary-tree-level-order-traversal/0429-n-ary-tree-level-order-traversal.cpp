@@ -33,7 +33,8 @@ public:
                 que.pop();
                 temp.push_back(cur->val);
                 for (int j = 0; j < cur->children.size(); j++) {
-                    if (cur->children[j]) que.push(cur->children[j]);
+                    // if (cur->children[j]) 
+                    que.push(cur->children[j]);
                 }
             }
             ans.push_back(temp);
