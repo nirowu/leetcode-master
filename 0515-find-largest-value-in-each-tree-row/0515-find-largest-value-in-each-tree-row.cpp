@@ -14,11 +14,12 @@ public:
     vector<int> largestValues(TreeNode* root) {
         vector<int> ans;
         queue<TreeNode*> que;
+        int size, maxi;
         if(root == NULL) return ans;
         que.push(root);
         while (!que.empty()) {
-            int size = que.size();
-            int maxi = INT_MIN;
+            size = que.size();
+            maxi = INT_MIN;
             for (int i = 0; i < size; i++) {
                 TreeNode* cur = que.front();
                 que.pop();
