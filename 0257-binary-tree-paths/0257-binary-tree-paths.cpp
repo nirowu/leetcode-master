@@ -11,31 +11,23 @@
  */
 class Solution {
 public:
-    void Traversal(TreeNode* cur, vector<int>& path, vector<string>& ret) {
-        if(cur == NULL) return;
-        path.push_back(cur->val);
-        if(cur->left == NULL && cur->right == NULL) {
-            string spath;
-            for (int i =0 ; i < path.size() - 1; i++) {
-                spath += (to_string(path[i]));
-                spath += "->";
-            }
-            spath += to_string(path[path.size() - 1]);
-            ret.push_back(spath);
+    void Traversal(TreeNode* cur, string path, vector<string>& ret) {
+        if (cur == NULL) return;
+        path += (to_string(cur->val));
+        if (!cur->left && !cur->right) {
+            ret.push_back(path);
             return;
         }
         if (cur->left){
-            Traversal(cur->left, path, ret);
-            path.pop_back();            
+            Traversal(cur->left, path + "->", ret);          
         }
         if (cur->right) {
-            Traversal(cur->right, path, ret);
-            path.pop_back();
+            Traversal(cur->right, path + "->", ret);
         }
     }
     vector<string> binaryTreePaths(TreeNode* root) {
         vector<string> ret;
-        vector<int> path;
+        string path;
         if (root == NULL) return ret;
         Traversal(root, path, ret);
         return ret;
