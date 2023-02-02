@@ -11,24 +11,28 @@
  */
 class Solution {
 public:
-    bool traversal(TreeNode* cur, int cnt) {
-        if (!cur->left && !cur->right && cnt == 0) return true; 
-        if (!cur->left && !cur->right) return false; 
+//     bool traversal(TreeNode* cur, int cnt) {
+//         if (!cur->left && !cur->right && cnt == 0) return true; 
+//         if (!cur->left && !cur->right) return false; 
 
-        if (cur->left) {
-            if (traversal(cur->left, cnt - cur->left->val)){
-                return true;
-            }
-        }
-        if (cur->right) {
-            if (traversal(cur->right, cnt - cur->right->val)) {
-                return true;
-            }
-        }
-        return false;
-    }
+//         if (cur->left) {
+//             if (traversal(cur->left, cnt - cur->left->val)){
+//                 return true;
+//             }
+//         }
+//         if (cur->right) {
+//             if (traversal(cur->right, cnt - cur->right->val)) {
+//                 return true;
+//             }
+//         }
+//         return false;
+//     }
     bool hasPathSum(TreeNode* root, int targetSum) {
         if (root == NULL) return false;
-        return traversal(root, targetSum - root->val);
+        if (!root->left && !root->right && targetSum == root->val){
+            return true;
+        }
+        return hasPathSum(root->left, targetSum - root->val) || 
+                hasPathSum(root->right, targetSum - root->val);
     }
 };
