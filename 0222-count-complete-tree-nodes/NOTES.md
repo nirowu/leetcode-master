@@ -1,4 +1,4 @@
-ver1 queue
+ver1 bfs
 ```
 class Solution {
 public:
@@ -20,4 +20,6 @@ if(cur->right) que.push(cur->right);
 return ans;
 }
 };
+```
+ver2 dfs
 ```
