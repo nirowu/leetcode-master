@@ -1,32 +1,13 @@
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
- * };
- */
 class Solution {
 public:
-    
+    int Traversal(TreeNode* cur) {
+        if (cur == NULL) return 0; 
+        int left = 0, right = 0;
+        if(cur->left) left = Traversal(cur->left);
+        if(cur->right) right = Traversal(cur->right);
+        return left + right + 1;
+    }
     int countNodes(TreeNode* root) {
-        if (root == NULL) return 0;
-        queue<TreeNode*> que;
-        que.push(root);
-        int ans = 0;
-        while (!que.empty()) {
-            int size = que.size();
-            ans += size;
-            for (int i = 0; i < size; i++) {
-                TreeNode* cur = que.front();
-                que.pop();
-                if(cur->left) que.push(cur->left);
-                if(cur->right) que.push(cur->right);
-            }
-        }
-        return ans;
+        return Traversal(root);
     }
 };
