@@ -15,13 +15,13 @@ public:
         if (root == NULL) return 0;
         if (root->left == NULL && root->right == NULL) return 0;
         
-        int leftvalue , rightvalue ;
-        leftvalue = sumOfLeftLeaves(root->left);
+        int leftvalue = 0 , rightvalue;
+        // leftvalue = sumOfLeftLeaves(root->left);
         if (root->left && root->left->left == NULL &&　root->left->right == NULL) {
             leftvalue = root->left->val;
         }
-        rightvalue = sumOfLeftLeaves(root->right);
-        return (leftvalue + rightvalue);
+        // rightvalue = sumOfLeftLeaves(root->right);
+        return leftvalue + sumOfLeftLeaves(root->left) + sumOfLeftLeaves(root->right);
         
     }
 };
