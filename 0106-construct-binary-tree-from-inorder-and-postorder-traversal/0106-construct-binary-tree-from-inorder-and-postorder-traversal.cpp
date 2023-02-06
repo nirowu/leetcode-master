@@ -1,23 +1,22 @@
 class Solution {
+    unordered_map<int,int>Map;
 public:
-    int post_idx;
-    TreeNode* utilBST(vector<int>& inorder, int is,int ie, vector<int>& postorder){
-        if(is>ie)return NULL;
-        TreeNode* root=new TreeNode(postorder[post_idx--]);
-        int idx;
-        for(int i=is;i<=ie;i++){
-            if(inorder[i]==root->val){
-                idx=i;
-                break;
-            }
-        }
-        root->right=utilBST(inorder,idx+1,ie,postorder);
-        root->left=utilBST(inorder,is,idx-1,postorder);
-        return root;
+    TreeNode* buildTree(vector<int>& inorder, vector<int>& postorder) 
+    {
+        for (int i=0; i<inorder.size(); i++)
+            Map[inorder[i]]=i;
+        return DFS(inorder,0,inorder.size()-1,postorder,0,postorder.size()-1);
     }
-    TreeNode* buildTree(vector<int>& inorder, vector<int>& postorder) {
-        post_idx=postorder.size()-1;
-        return utilBST(inorder,0,inorder.size()-1,postorder);
+    
+    TreeNode* DFS(vector<int>& inorder, int a, int b, vector<int>& postorder, int m, int n)
+    {
+        if (a>b) return NULL;
         
+        TreeNode* root=new TreeNode(postorder[n]);
+        int pos=Map[postorder[n]];
+        root->left = DFS(inorder,a,pos-1,postorder,m,m+pos-1-a);
+        root->right = DFS(inorder,pos+1,b,postorder,m+pos-a,n-1);
+        
+        return root;
     }
 };
