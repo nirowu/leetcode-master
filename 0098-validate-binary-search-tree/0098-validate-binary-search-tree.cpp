@@ -11,25 +11,13 @@
  */
 class Solution {
 public:
+    long long maxVal = LONG_MIN;
     bool isValidBST(TreeNode* root) {
         if (!root) return true;
-        TreeNode* node;
-        if (root->left){
-            node = root->left;
-            while (node->right) {
-                node = node ->right;
-            }
-            if (node->val >= root->val) return false;
-            
-        }
-        if (root->right) {
-            node = root->right;
-            while(node->left) {
-                node = node->left;  
-            }
-            if (node->val <= root->val)  return false;
-            
-        }
-        return isValidBST(root->left) && isValidBST(root->right);
+        bool left = isValidBST(root->left);
+        if (maxVal < root->val) maxVal = root->val;
+        else return false;
+        bool right = isValidBST(root->right);
+        return left && right;
     }
 };
