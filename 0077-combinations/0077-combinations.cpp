@@ -7,7 +7,7 @@ private:
             ans.push_back(path);
             return;
         }
-        for (int i = startx; i <= n; i++) {
+        for (int i = startx; i <= n - (k - path.size()) + 1; i++) {
             path.push_back(i);
             backtracking(n, k, i + 1);
             path.pop_back();
