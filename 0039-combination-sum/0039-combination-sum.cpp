@@ -18,6 +18,7 @@ private:
     }
 public:
     vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
+        ans.clear(); path.clear();
         backtracking(candidates, target, 0, 0);
         return ans;
     }
