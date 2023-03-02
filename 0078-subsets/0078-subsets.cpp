@@ -5,7 +5,6 @@ private:
     void backtracking(vector<int>& nums, int startx) {
         ans.push_back(tmp);
         if (startx >= nums.size()) return;
-        
         for (int i = startx; i < nums.size(); i++) {
             tmp.push_back(nums[i]);
             backtracking(nums, i + 1);
