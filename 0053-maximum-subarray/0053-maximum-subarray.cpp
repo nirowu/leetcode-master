@@ -1,12 +1,11 @@
 class Solution {
 public:
     int maxSubArray(vector<int>& nums) {
-        vector<int> dp(nums.size());
-        dp[0] = nums[0];
+        int max_ending = nums[0];
         int maxi = nums[0];
         for (int i = 1; i < nums.size(); i++) {
-            dp[i] = max(dp[i-1] + nums[i], nums[i]);
-            maxi = max(dp[i], maxi);
+            max_ending = max(max_ending + nums[i], nums[i]);
+            maxi = max(max_ending, maxi);
         }
         return maxi;
     }
