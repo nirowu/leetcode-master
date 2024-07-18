@@ -6,6 +6,7 @@ public:
         int area = 0, x, y;
         int dx[4] = {0, 0, 1, -1};
         int dy[4] = {1, -1, 0, 0};
+        visited[i][j] = -1;
         
         queue<pair<int, int>>q;
         q.push({i, j});
@@ -33,8 +34,7 @@ public:
         
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
-                if (grid[i][j]) {
-                    visited[i][j] = -1;
+                if (grid[i][j] && !visited[i][j]) {
                     curArea = bfs(visited, grid, i, j);
                     maxArea = max(maxArea, curArea);
                 }
