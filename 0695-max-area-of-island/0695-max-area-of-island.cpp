@@ -18,6 +18,7 @@ public:
                 if (x >= 0 && x < grid.size() && y >= 0 && y < grid[0].size() && 
                     !visited[x][y] && grid[x][y]) {
                     visited[x][y] = -1;
+                    grid[x][y] = -1;
                     q.push({x, y});
                 }
 
