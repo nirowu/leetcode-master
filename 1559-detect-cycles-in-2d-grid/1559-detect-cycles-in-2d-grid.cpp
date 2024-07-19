@@ -1,7 +1,6 @@
 class Solution {
 public:
     int visited[505][505] = {0};
-    int start[505][505] = {0};
     int dx[4] = {0, 0, 1, -1};
     int dy[4] = {1, -1, 0, 0};
     int m, n;
