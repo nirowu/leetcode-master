@@ -36,8 +36,7 @@ public:
                         rob_y = tar_y;
                     }
                 }
-                int temp = (pow(rob_x, 2) + pow(rob_y, 2));
-                maximun_distance = max(maximun_distance, temp);
+                maximun_distance = max(maximun_distance, (rob_x * rob_x + rob_y * rob_y));
             } 
             
         }
