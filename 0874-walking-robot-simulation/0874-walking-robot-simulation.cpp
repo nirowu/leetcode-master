@@ -1,47 +1,45 @@
 class Solution {
 public:
     int robotSim(vector<int>& commands, vector<vector<int>>& obstacles) {
-        unordered_map<string,int>mp;
-        for(auto it:obstacles){
+        unordered_map<string, int> map;
+        for (auto it: obstacles) {
             string key = to_string(it[0])+"+"+to_string(it[1]);
-            mp[key]++;
+            map[key]++;
+            
         }
-        vector<vector<int>>direc = {{-1,0},{0,1},{1,0},{0,-1}}; 
-        // according to order W N E S
+        
+        int rob_x = 0, rob_y = 0;
+        int tar_x = 0, tar_y = 0;
 
-        int dir = 1; // i.e. north 
-        // 0: west, 1: north, 2: east, 3: south
-        int x=0,y=0;
-        int mxDist=0;
-        for(int it:commands){
-            if(it==-2){
-                // move left
-                if(dir==0) dir = 3;
-                else dir--;
+        int dir = 0;
+        int dx[4] = {0, 1, 0, -1};
+        int dy[4] = {1, 0, -1, 0};
+        int maximun_distance = 0;
+        for (int i: commands) {
+            if (i == -1) {
+                dir = (dir+1) % 4; continue;
             }
-            else if(it==-1){
-                // move right
-                dir = (dir+1)%4;
+            else if (i == -2) {
+                dir = (dir-1+4) % 4; continue;
             }
-            else{
-                int k = it;
-                for(int i=1; i<=k; i++){
-                    int newX = x+direc[dir][0];
-                    int newY = y+direc[dir][1];
+            else {
+                while(i--) {
+                    tar_x = rob_x + dx[dir];
+                    tar_y = rob_y + dy[dir];
                     
-                    string key = to_string(newX)+"+"+to_string(newY);
-                    if(mp.find(key)!=mp.end()){
-                        // obstacle has been found so don't go there
+                    string tar = to_string(tar_x)+"+"+to_string(tar_y);
+                    if (map.find(tar) != map.end()) {
                         break;
                     }
-                    x = newX, y=newY;
-                    mxDist = max(mxDist, x*x+y*y);
+                    else {
+                        rob_x = tar_x;
+                        rob_y = tar_y;
+                    }
                 }
-            }
-        } 
-
-        return mxDist;
-
-
+                maximun_distance = max(maximun_distance, (rob_x * rob_x + rob_y * rob_y));
+            } 
+            
+        }
+        return maximun_distance;
     }
 };
