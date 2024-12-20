@@ -11,13 +11,25 @@
  */
 class Solution {
 public:
-    long long maxVal = LONG_MIN;
+    int arr[10005] = {0};
+    int idx;
+    void helper(TreeNode* node) {
+        if (node->left) helper(node->left);
+        arr[idx++] = node->val;
+        if (node->right)helper(node->right);
+    }
     bool isValidBST(TreeNode* root) {
-        if (!root) return true;
-        bool left = isValidBST(root->left);
-        if (maxVal < root->val) maxVal = root->val;
-        else return false;
-        bool right = isValidBST(root->right);
-        return left && right;
+        idx = 0;
+        bool ans ;
+        if (!root->left && !root->right) {
+            return true;
+        }
+        helper(root);
+        for (int i = 1; i < idx ;i++) {
+            if(arr[i-1] >= arr[i]) {
+                return false;
+            }
+        }
+        return true;
     }
 };
