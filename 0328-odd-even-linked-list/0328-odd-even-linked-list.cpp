@@ -11,16 +11,36 @@
 class Solution {
 public:
     ListNode* oddEvenList(ListNode* head) {
-        if (!head) return head; 
-        ListNode* odd = head, *even = head->next, *evenhead = even;
-        
-        while(even && even->next) {
-            odd->next = even->next;
-            odd = odd->next;
-            even->next = odd->next;
-            even = even->next;
+        if (!head || !head->next) {
+            return head;
         }
-        odd->next = evenhead;
+        ListNode* ptr = head;
+        ListNode* ptr2 = head;
+
+        int idx = 0;
+        int cnt1 = 0, cnt2 = 0;
+        int arr1[10005] = {0};
+        int arr2[10005] = {0};
+
+        while(ptr) {
+            if (!(idx%2)) {
+                arr1[cnt1++] = ptr->val; 
+            }
+            else {
+                arr2[cnt2++] = ptr->val;
+            }
+            idx += 1;
+            ptr = ptr->next;
+        }
+        for (int i = 0; i < cnt1; i++) {
+            ptr2->val = arr1[i];
+            ptr2 = ptr2->next;
+        }
+        for (int i = 0; i < cnt2; i++) {
+            ptr2->val = arr2[i];
+            ptr2 = ptr2->next;
+        }
+
         return head;
     }
 };
