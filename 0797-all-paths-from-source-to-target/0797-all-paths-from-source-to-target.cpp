@@ -1,21 +1,21 @@
 class Solution {
 public:
-    vector<vector<int>> result;
-    vector<int> path;
-    void dfs(vector<vector<int>>& graph, int x) {
-        if (x == graph.size() - 1) {
-            result.push_back(path);
+    int n;
+    vector<vector<int>> paths;
+    void helper(vector<vector<int>>& graph, int cur, vector<int>path) {
+        path.push_back(cur);
+        if (cur == n - 1) {
+            paths.push_back(path);
             return;
-        }
-        for (int i = 0; i < graph[x].size(); i++) {
-            path.push_back(graph[x][i]);
-            dfs(graph, graph[x][i]);
-            path.pop_back();
+        } else {
+            for (int i = 0; i < graph[cur].size(); i++) {
+                helper(graph, graph[cur][i], path);
+            }
         }
     }
     vector<vector<int>> allPathsSourceTarget(vector<vector<int>>& graph) {
-        path.push_back(0);
-        dfs(graph, 0);
-        return result;
+        n = graph.size();
+        helper(graph, 0, {});
+        return paths;
     }
 };
