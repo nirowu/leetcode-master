@@ -19,6 +19,7 @@ Update AC code on leetcode with leethub extension
 ## String
 |  |
 | ------- |
+| [0742-to-lower-case](https://github.com/nirowu/leetcode-master/tree/master/0742-to-lower-case) |
 | [0782-jewels-and-stones](https://github.com/nirowu/leetcode-master/tree/master/0782-jewels-and-stones) |
 ## Prefix Sum
 |  |
