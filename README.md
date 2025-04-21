@@ -6,6 +6,7 @@ Update AC code on leetcode with leethub extension
 ## Array
 |  |
 | ------- |
+| [1603-running-sum-of-1d-array](https://github.com/nirowu/leetcode-master/tree/master/1603-running-sum-of-1d-array) |
 | [2058-concatenation-of-array](https://github.com/nirowu/leetcode-master/tree/master/2058-concatenation-of-array) |
 ## Simulation
 |  |
@@ -19,4 +20,8 @@ Update AC code on leetcode with leethub extension
 |  |
 | ------- |
 | [0782-jewels-and-stones](https://github.com/nirowu/leetcode-master/tree/master/0782-jewels-and-stones) |
+## Prefix Sum
+|  |
+| ------- |
+| [1603-running-sum-of-1d-array](https://github.com/nirowu/leetcode-master/tree/master/1603-running-sum-of-1d-array) |
 <!---LeetCode Topics End-->
