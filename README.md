@@ -6,6 +6,7 @@ Update AC code on leetcode with leethub extension
 ## Array
 |  |
 | ------- |
+| [0066-plus-one](https://github.com/nirowu/leetcode-master/tree/master/0066-plus-one) |
 | [1603-running-sum-of-1d-array](https://github.com/nirowu/leetcode-master/tree/master/1603-running-sum-of-1d-array) |
 | [1791-richest-customer-wealth](https://github.com/nirowu/leetcode-master/tree/master/1791-richest-customer-wealth) |
 | [2058-concatenation-of-array](https://github.com/nirowu/leetcode-master/tree/master/2058-concatenation-of-array) |
@@ -30,6 +31,7 @@ Update AC code on leetcode with leethub extension
 ## Math
 |  |
 | ------- |
+| [0066-plus-one](https://github.com/nirowu/leetcode-master/tree/master/0066-plus-one) |
 | [1500-count-largest-group](https://github.com/nirowu/leetcode-master/tree/master/1500-count-largest-group) |
 ## Matrix
 |  |
