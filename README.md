@@ -7,6 +7,7 @@ Update AC code on leetcode with leethub extension
 |  |
 | ------- |
 | [1603-running-sum-of-1d-array](https://github.com/nirowu/leetcode-master/tree/master/1603-running-sum-of-1d-array) |
+| [1791-richest-customer-wealth](https://github.com/nirowu/leetcode-master/tree/master/1791-richest-customer-wealth) |
 | [2058-concatenation-of-array](https://github.com/nirowu/leetcode-master/tree/master/2058-concatenation-of-array) |
 ## Simulation
 |  |
@@ -30,4 +31,8 @@ Update AC code on leetcode with leethub extension
 |  |
 | ------- |
 | [1500-count-largest-group](https://github.com/nirowu/leetcode-master/tree/master/1500-count-largest-group) |
+## Matrix
+|  |
+| ------- |
+| [1791-richest-customer-wealth](https://github.com/nirowu/leetcode-master/tree/master/1791-richest-customer-wealth) |
 <!---LeetCode Topics End-->
