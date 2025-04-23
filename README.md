@@ -16,6 +16,7 @@ Update AC code on leetcode with leethub extension
 |  |
 | ------- |
 | [0782-jewels-and-stones](https://github.com/nirowu/leetcode-master/tree/master/0782-jewels-and-stones) |
+| [1500-count-largest-group](https://github.com/nirowu/leetcode-master/tree/master/1500-count-largest-group) |
 ## String
 |  |
 | ------- |
@@ -25,4 +26,8 @@ Update AC code on leetcode with leethub extension
 |  |
 | ------- |
 | [1603-running-sum-of-1d-array](https://github.com/nirowu/leetcode-master/tree/master/1603-running-sum-of-1d-array) |
+## Math
+|  |
+| ------- |
+| [1500-count-largest-group](https://github.com/nirowu/leetcode-master/tree/master/1500-count-largest-group) |
 <!---LeetCode Topics End-->
