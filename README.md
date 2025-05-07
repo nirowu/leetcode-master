@@ -37,4 +37,12 @@ Update AC code on leetcode with leethub extension
 |  |
 | ------- |
 | [1791-richest-customer-wealth](https://github.com/nirowu/leetcode-master/tree/master/1791-richest-customer-wealth) |
+## Stack
+|  |
+| ------- |
+| [0155-min-stack](https://github.com/nirowu/leetcode-master/tree/master/0155-min-stack) |
+## Design
+|  |
+| ------- |
+| [0155-min-stack](https://github.com/nirowu/leetcode-master/tree/master/0155-min-stack) |
 <!---LeetCode Topics End-->
