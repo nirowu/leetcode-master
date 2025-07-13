@@ -45,4 +45,9 @@ Update AC code on leetcode with leethub extension
 |  |
 | ------- |
 | [0155-min-stack](https://github.com/nirowu/leetcode-master/tree/master/0155-min-stack) |
+| [0838-design-linked-list](https://github.com/nirowu/leetcode-master/tree/master/0838-design-linked-list) |
+## Linked List
+|  |
+| ------- |
+| [0838-design-linked-list](https://github.com/nirowu/leetcode-master/tree/master/0838-design-linked-list) |
 <!---LeetCode Topics End-->
