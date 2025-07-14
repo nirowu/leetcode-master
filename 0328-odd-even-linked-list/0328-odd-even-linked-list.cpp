@@ -11,36 +11,30 @@
 class Solution {
 public:
     ListNode* oddEvenList(ListNode* head) {
-        if (!head || !head->next) {
-            return head;
+        if (!head || !head->next) return head;
+        ListNode* cur = head;
+        int arr[10005], idx = 0, size;
+        while(cur) {
+            arr[idx++] = cur->val;
+            cur = cur->next;
         }
-        ListNode* ptr = head;
-        ListNode* ptr2 = head;
-
-        int idx = 0;
-        int cnt1 = 0, cnt2 = 0;
-        int arr1[10005] = {0};
-        int arr2[10005] = {0};
-
-        while(ptr) {
-            if (!(idx%2)) {
-                arr1[cnt1++] = ptr->val; 
-            }
-            else {
-                arr2[cnt2++] = ptr->val;
-            }
-            idx += 1;
-            ptr = ptr->next;
+        size = idx--; idx = 0;
+        int newarr[10005];
+        for (int i = 0; i < size; i+=2) {
+            newarr[idx++] = arr[i];
         }
-        for (int i = 0; i < cnt1; i++) {
-            ptr2->val = arr1[i];
-            ptr2 = ptr2->next;
+        for (int i = 1; i < size; i+=2) {
+            newarr[idx++] = arr[i];
         }
-        for (int i = 0; i < cnt2; i++) {
-            ptr2->val = arr2[i];
-            ptr2 = ptr2->next;
+        for (int i = 0; i < size; i++) {
+            cout<< newarr[i]<<" ";
         }
-
+        idx = 0; cur = head;
+        while(idx <= size) {
+            cur->val = newarr[idx++];
+            if (!cur->next) break;
+            cur = cur->next;
+        }
         return head;
     }
 };

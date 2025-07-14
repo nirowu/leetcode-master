@@ -51,6 +51,7 @@ Update AC code on leetcode with leethub extension
 | ------- |
 | [0203-remove-linked-list-elements](https://github.com/nirowu/leetcode-master/tree/master/0203-remove-linked-list-elements) |
 | [0206-reverse-linked-list](https://github.com/nirowu/leetcode-master/tree/master/0206-reverse-linked-list) |
+| [0328-odd-even-linked-list](https://github.com/nirowu/leetcode-master/tree/master/0328-odd-even-linked-list) |
 | [0838-design-linked-list](https://github.com/nirowu/leetcode-master/tree/master/0838-design-linked-list) |
 ## Recursion
 |  |
