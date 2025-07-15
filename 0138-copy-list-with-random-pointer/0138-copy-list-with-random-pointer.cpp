@@ -26,11 +26,6 @@ public:
             cur->next = copynode;
             cur = copynode->next;
         }
-        // cur = head;
-        // while(cur) {
-        //     cout<< cur->val<<" ";
-        //     cur = cur->next;
-        // }
         // add the random link to copy one
         cur = head;
         while(cur) {
@@ -41,7 +36,7 @@ public:
             if (!cur->next->next) break;
             cur = cur->next->next;
         }
-        // cut the original
+        // recover to two linked list
         cur = head; 
         Node *newhead = head->next;
         Node *newcur = newhead;
@@ -53,7 +48,6 @@ public:
             newcur = newcur->next;
         }
         cur->next = nullptr;
-        // newcur->next = nullptr;
         return newhead;
     }
 };
