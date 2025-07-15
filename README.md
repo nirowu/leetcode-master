@@ -17,6 +17,7 @@ Update AC code on leetcode with leethub extension
 ## Hash Table
 |  |
 | ------- |
+| [0138-copy-list-with-random-pointer](https://github.com/nirowu/leetcode-master/tree/master/0138-copy-list-with-random-pointer) |
 | [0782-jewels-and-stones](https://github.com/nirowu/leetcode-master/tree/master/0782-jewels-and-stones) |
 | [1500-count-largest-group](https://github.com/nirowu/leetcode-master/tree/master/1500-count-largest-group) |
 ## String
@@ -49,6 +50,7 @@ Update AC code on leetcode with leethub extension
 ## Linked List
 |  |
 | ------- |
+| [0138-copy-list-with-random-pointer](https://github.com/nirowu/leetcode-master/tree/master/0138-copy-list-with-random-pointer) |
 | [0203-remove-linked-list-elements](https://github.com/nirowu/leetcode-master/tree/master/0203-remove-linked-list-elements) |
 | [0206-reverse-linked-list](https://github.com/nirowu/leetcode-master/tree/master/0206-reverse-linked-list) |
 | [0328-odd-even-linked-list](https://github.com/nirowu/leetcode-master/tree/master/0328-odd-even-linked-list) |
