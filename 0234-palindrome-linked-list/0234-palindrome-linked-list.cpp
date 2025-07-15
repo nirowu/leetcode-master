@@ -25,7 +25,6 @@ public:
             prev = slow;
             slow = tmp;
         }
-        cout<<prev->val<<endl;
         ListNode* cur = head;
         while(cur) {
             if (cur->val != prev->val) {
