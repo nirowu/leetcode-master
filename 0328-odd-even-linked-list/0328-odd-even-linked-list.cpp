@@ -12,29 +12,19 @@ class Solution {
 public:
     ListNode* oddEvenList(ListNode* head) {
         if (!head || !head->next) return head;
-        ListNode* cur = head;
-        int arr[10005], idx = 0, size;
-        while(cur) {
-            arr[idx++] = cur->val;
-            cur = cur->next;
+
+        ListNode* oddhead = head;
+        ListNode* evenhead = head->next;
+        ListNode* odd = oddhead;
+        ListNode* even = evenhead;
+
+        while(even && even->next) {
+            odd->next = even->next;
+            odd = odd->next;
+            even->next = odd->next;
+            even = even->next;
         }
-        size = idx--; idx = 0;
-        int newarr[10005];
-        for (int i = 0; i < size; i+=2) {
-            newarr[idx++] = arr[i];
-        }
-        for (int i = 1; i < size; i+=2) {
-            newarr[idx++] = arr[i];
-        }
-        for (int i = 0; i < size; i++) {
-            cout<< newarr[i]<<" ";
-        }
-        idx = 0; cur = head;
-        while(idx <= size) {
-            cur->val = newarr[idx++];
-            if (!cur->next) break;
-            cur = cur->next;
-        }
-        return head;
+        odd->next = evenhead;
+        return oddhead;
     }
 };
