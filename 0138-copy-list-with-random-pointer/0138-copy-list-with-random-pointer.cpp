@@ -17,18 +17,43 @@ public:
 class Solution {
 public:
     Node* copyRandomList(Node* head) {
+        if (!head) return nullptr;
+        // copy a-a'-b-b'
         Node* cur = head;
-        unordered_map<Node*, Node*> oldToNew;
         while(cur) {
-            oldToNew[cur] = new Node(cur->val);
-            cur = cur->next;
+            Node* copynode = new Node(cur->val);
+            copynode->next = cur->next;
+            cur->next = copynode;
+            cur = copynode->next;
         }
+        // cur = head;
+        // while(cur) {
+        //     cout<< cur->val<<" ";
+        //     cur = cur->next;
+        // }
+        // add the random link to copy one
         cur = head;
         while(cur) {
-            oldToNew[cur]->next = oldToNew[cur->next];
-            oldToNew[cur]->random = oldToNew[cur->random];
-            cur = cur->next;
+            if (!cur->random) cur->next->random = nullptr;
+            else{
+                cur->next->random = cur->random->next;
+            }
+            if (!cur->next->next) break;
+            cur = cur->next->next;
         }
-        return oldToNew[head];
+        // cut the original
+        cur = head; 
+        Node *newhead = head->next;
+        Node *newcur = newhead;
+        while(cur && cur->next) {
+            if (!cur->next->next) break;
+            cur->next = newcur->next;
+            newcur->next = cur->next->next;
+            cur = cur->next;
+            newcur = newcur->next;
+        }
+        cur->next = nullptr;
+        // newcur->next = nullptr;
+        return newhead;
     }
 };
