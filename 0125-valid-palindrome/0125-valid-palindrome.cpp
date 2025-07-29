@@ -1,23 +1,19 @@
 class Solution {
 public:
     bool isPalindrome(string s) {
-
-        string newS = "";
-        for (auto &c: s) {
-            if (std::isalpha(c)) {
-                newS += std::tolower(c);
+        int left = 0, right = s.size()-1;
+        while(left < right) {
+            if (!std::isalnum(s[left])) {
+                left++; continue;
             }
-            else if(std:: isdigit(c)) {
-                newS += c;
+            if (!std::isalnum(s[right])) {
+                right--; continue;
             }
-        }
-
-        int left = 0, right = newS.size()-1;
-        while(left < right){
-            if (newS[left++] != newS[right--]) {
+            if (tolower(s[left++]) != tolower(s[right--])) {
                 return false;
             }
         }
         return true;
+
     }
 };
