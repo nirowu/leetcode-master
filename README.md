@@ -9,6 +9,7 @@ Update AC code on leetcode with leethub extension
 | [0011-container-with-most-water](https://github.com/nirowu/leetcode-master/tree/master/0011-container-with-most-water) |
 | [0066-plus-one](https://github.com/nirowu/leetcode-master/tree/master/0066-plus-one) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/nirowu/leetcode-master/tree/master/0167-two-sum-ii-input-array-is-sorted) |
+| [0349-intersection-of-two-arrays](https://github.com/nirowu/leetcode-master/tree/master/0349-intersection-of-two-arrays) |
 | [1603-running-sum-of-1d-array](https://github.com/nirowu/leetcode-master/tree/master/1603-running-sum-of-1d-array) |
 | [1791-richest-customer-wealth](https://github.com/nirowu/leetcode-master/tree/master/1791-richest-customer-wealth) |
 | [2058-concatenation-of-array](https://github.com/nirowu/leetcode-master/tree/master/2058-concatenation-of-array) |
@@ -21,6 +22,7 @@ Update AC code on leetcode with leethub extension
 | ------- |
 | [0138-copy-list-with-random-pointer](https://github.com/nirowu/leetcode-master/tree/master/0138-copy-list-with-random-pointer) |
 | [0141-linked-list-cycle](https://github.com/nirowu/leetcode-master/tree/master/0141-linked-list-cycle) |
+| [0349-intersection-of-two-arrays](https://github.com/nirowu/leetcode-master/tree/master/0349-intersection-of-two-arrays) |
 | [0782-jewels-and-stones](https://github.com/nirowu/leetcode-master/tree/master/0782-jewels-and-stones) |
 | [1500-count-largest-group](https://github.com/nirowu/leetcode-master/tree/master/1500-count-largest-group) |
 ## String
@@ -79,13 +81,19 @@ Update AC code on leetcode with leethub extension
 | [0141-linked-list-cycle](https://github.com/nirowu/leetcode-master/tree/master/0141-linked-list-cycle) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/nirowu/leetcode-master/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0234-palindrome-linked-list](https://github.com/nirowu/leetcode-master/tree/master/0234-palindrome-linked-list) |
+| [0349-intersection-of-two-arrays](https://github.com/nirowu/leetcode-master/tree/master/0349-intersection-of-two-arrays) |
 | [0908-middle-of-the-linked-list](https://github.com/nirowu/leetcode-master/tree/master/0908-middle-of-the-linked-list) |
 ## Binary Search
 |  |
 | ------- |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/nirowu/leetcode-master/tree/master/0167-two-sum-ii-input-array-is-sorted) |
+| [0349-intersection-of-two-arrays](https://github.com/nirowu/leetcode-master/tree/master/0349-intersection-of-two-arrays) |
 ## Greedy
 |  |
 | ------- |
 | [0011-container-with-most-water](https://github.com/nirowu/leetcode-master/tree/master/0011-container-with-most-water) |
+## Sorting
+|  |
+| ------- |
+| [0349-intersection-of-two-arrays](https://github.com/nirowu/leetcode-master/tree/master/0349-intersection-of-two-arrays) |
 <!---LeetCode Topics End-->
