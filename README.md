@@ -15,6 +15,7 @@ Update AC code on leetcode with leethub extension
 | [0349-intersection-of-two-arrays](https://github.com/nirowu/leetcode-master/tree/master/0349-intersection-of-two-arrays) |
 | [1603-running-sum-of-1d-array](https://github.com/nirowu/leetcode-master/tree/master/1603-running-sum-of-1d-array) |
 | [1791-richest-customer-wealth](https://github.com/nirowu/leetcode-master/tree/master/1791-richest-customer-wealth) |
+| [1917-maximum-average-pass-ratio](https://github.com/nirowu/leetcode-master/tree/master/1917-maximum-average-pass-ratio) |
 | [2058-concatenation-of-array](https://github.com/nirowu/leetcode-master/tree/master/2058-concatenation-of-array) |
 ## Simulation
 |  |
@@ -102,9 +103,14 @@ Update AC code on leetcode with leethub extension
 |  |
 | ------- |
 | [0011-container-with-most-water](https://github.com/nirowu/leetcode-master/tree/master/0011-container-with-most-water) |
+| [1917-maximum-average-pass-ratio](https://github.com/nirowu/leetcode-master/tree/master/1917-maximum-average-pass-ratio) |
 ## Sorting
 |  |
 | ------- |
 | [0015-3sum](https://github.com/nirowu/leetcode-master/tree/master/0015-3sum) |
 | [0349-intersection-of-two-arrays](https://github.com/nirowu/leetcode-master/tree/master/0349-intersection-of-two-arrays) |
+## Heap (Priority Queue)
+|  |
+| ------- |
+| [1917-maximum-average-pass-ratio](https://github.com/nirowu/leetcode-master/tree/master/1917-maximum-average-pass-ratio) |
 <!---LeetCode Topics End-->
