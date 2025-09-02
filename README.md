@@ -13,6 +13,7 @@ Update AC code on leetcode with leethub extension
 | [0080-remove-duplicates-from-sorted-array-ii](https://github.com/nirowu/leetcode-master/tree/master/0080-remove-duplicates-from-sorted-array-ii) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/nirowu/leetcode-master/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0349-intersection-of-two-arrays](https://github.com/nirowu/leetcode-master/tree/master/0349-intersection-of-two-arrays) |
+| [0496-next-greater-element-i](https://github.com/nirowu/leetcode-master/tree/master/0496-next-greater-element-i) |
 | [1603-running-sum-of-1d-array](https://github.com/nirowu/leetcode-master/tree/master/1603-running-sum-of-1d-array) |
 | [1791-richest-customer-wealth](https://github.com/nirowu/leetcode-master/tree/master/1791-richest-customer-wealth) |
 | [1917-maximum-average-pass-ratio](https://github.com/nirowu/leetcode-master/tree/master/1917-maximum-average-pass-ratio) |
@@ -27,6 +28,7 @@ Update AC code on leetcode with leethub extension
 | [0138-copy-list-with-random-pointer](https://github.com/nirowu/leetcode-master/tree/master/0138-copy-list-with-random-pointer) |
 | [0141-linked-list-cycle](https://github.com/nirowu/leetcode-master/tree/master/0141-linked-list-cycle) |
 | [0349-intersection-of-two-arrays](https://github.com/nirowu/leetcode-master/tree/master/0349-intersection-of-two-arrays) |
+| [0496-next-greater-element-i](https://github.com/nirowu/leetcode-master/tree/master/0496-next-greater-element-i) |
 | [0782-jewels-and-stones](https://github.com/nirowu/leetcode-master/tree/master/0782-jewels-and-stones) |
 | [1500-count-largest-group](https://github.com/nirowu/leetcode-master/tree/master/1500-count-largest-group) |
 ## String
@@ -55,6 +57,7 @@ Update AC code on leetcode with leethub extension
 | ------- |
 | [0155-min-stack](https://github.com/nirowu/leetcode-master/tree/master/0155-min-stack) |
 | [0234-palindrome-linked-list](https://github.com/nirowu/leetcode-master/tree/master/0234-palindrome-linked-list) |
+| [0496-next-greater-element-i](https://github.com/nirowu/leetcode-master/tree/master/0496-next-greater-element-i) |
 ## Design
 |  |
 | ------- |
@@ -113,4 +116,8 @@ Update AC code on leetcode with leethub extension
 |  |
 | ------- |
 | [1917-maximum-average-pass-ratio](https://github.com/nirowu/leetcode-master/tree/master/1917-maximum-average-pass-ratio) |
+## Monotonic Stack
+|  |
+| ------- |
+| [0496-next-greater-element-i](https://github.com/nirowu/leetcode-master/tree/master/0496-next-greater-element-i) |
 <!---LeetCode Topics End-->
