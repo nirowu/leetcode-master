@@ -2,23 +2,21 @@ class Solution {
 public:
     vector<int> nextGreaterElement(vector<int>& nums1, vector<int>& nums2) {
         vector<int>ans;
-        int i = 0, j = 0;
-        bool isFind = false;
-        for (i = 0; i < nums1.size(); i++) { //nums1[i]
-            isFind = false;
-            for (j = 0; j < nums2.size(); j++) {
-                if (nums1[i] == nums2[j]) {
+        map<int, int>mp;
+        int idx = 0; int isFind;
+        for (int i = 0; i < nums2.size(); i++) {
+            isFind = 0;
+            for (int j = i+1; j < nums2.size(); j++) {
+                if (nums2[j] > nums2[i]) {
+                    mp[nums2[i]] = nums2[j];
+                    isFind = 1;
                     break;
-                }
+                };
             }
-            for (; j < nums2.size();j++) {
-                if (nums2[j] > nums1[i]) {
-                    ans.push_back(nums2[j]);
-                    isFind = true;
-                    break;
-                }
-            }
-            if (!isFind) ans.push_back(-1);
+            if (!isFind) mp[nums2[i]] = -1;
+        }
+        for (auto& i: nums1) {
+            ans.push_back(mp[i]);
         }
         return ans;
     }
